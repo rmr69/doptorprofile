@@ -14,5 +14,114 @@ Template Name: Doptor Profile
                 width:100%;
             }
         }
+
+        .navbar-collapse{
+            .portfolio-item{
+                .profile-image{
+                    img{
+                        width: 70px;
+                        height: 70px;
+                        line-height: 70px;
+                        float: right;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .profile-item{
+                display: flex;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                
+                .navbar-nav{
+                    .dropdown{
+                        .dropdown-toggle{
+                            .titlename{
+                                font-weight: bold;
+                            }
+                        }
+
+                        .mainsubitem{
+                            display: block;
+                            float: left;
+                            width: 100%;
+                            border-bottom: 1px solid #ddd;
+                            padding: 10px;
+                            .subitem{
+                                display: block;
+                                float: left;
+                                width: 50%;
+                                text-decoration: none;
+                                padding: 0px 10px;
+                                text-align: center;
+                                border-right: 1px solid red;
+                                &:last-child{
+                                    border-right: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ================== 2 Main Content Area ==================== */
+
+.maincontent-area{
+    .left-sidebar{
+        display: block;
+        float: left;
+        width: 100%;
+        background-color: #DEE1E6;
+        height: auto;
+       img{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+       }
+       h4{
+           display: block;
+           width: 100%;
+           text-align: center;
+           font-size: 22px;
+       }
+       p{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+       }
+
+       nav{
+           ul{
+            display: block;
+            float: left;
+            width: 100%;
+            padding-left: 20px;
+            
+               li{
+                   list-style: none;
+                   display: block;
+                   float: left;
+                   width: 100%;
+                   margin:5px 0px;
+                   a{
+                        text-decoration: none;
+                        color: #000;
+
+                        i{
+                            color: #ff5722;
+                        }
+                   }
+               }
+           }
+       }
     }
 }

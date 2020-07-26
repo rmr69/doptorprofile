@@ -7,9 +7,56 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
 </head>
 <body>
+    
+    <!-- <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    
+    </label>
+    <div class="sidebar">
+        <header> My App</header>
+        <ul>
+            <li><a href=""> <i class="fas fa-qrcode"></i>  Dashboard</a></li>
+            <li><a href=""> <i class="fas fa-link"></i> Shortcuts </a></li>
+            <li><a href=""> <i class="fas fa-stream"></i> Overview </a></li>
+            <li><a href=""> <i class="fas fa-calendar-week"></i> Events </a></li>
+            <li><a href=""> <i class="fas fa-question-circle"></i>  About</a></li>
+            <li><a href=""> <i class="fas fa-sliders-h"></i> Services </a></li>
+            <li><a href=""> <i class="fas fa-envelope"></i> Contact </a></li>
+        </ul>
+    </div>     -->
+
 <header class="header-area">
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    
+    </label>
+    <div class="sidebar">
+        <header>ডাক</header>
+        <ul>
+            <li><a href=""> <i class="fas fa-qrcode"></i> ড্যাশবোর্ড</a></li>
+            <li><a href=""> <i class="fas fa-link"></i> শাখা স্প্লিট </a></li>
+            <li><a href=""> <i class="fas fa-stream"></i> অফিস শাখা প্রধান </a></li>
+            <li><a href=""> <i class="fas fa-calendar-week"></i> অ্যাডমিন শাখা  </a></li>
+            <li><a href=""> <i class="fas fa-question-circle"></i>  প্রতিকল্প ব্যবস্থাপনা</a></li>
+            <li><a href=""> <i class="fas fa-sliders-h"></i> অফিস </a></li>
+            <li><a href=""> <i class="fas fa-envelope"></i> দপ্তর ব্যবস্থাপনা </a></li>
+        </ul>
+    </div> 
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="images/Logo-2.png" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,14 +153,353 @@
                         <li class="nav-item" role="presentation">
                           <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#netification" role="tab" aria-controls="pills-contact" aria-selected="false"> নোটিফিকেশন   </a>
                         </li>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#shareitem" role="tab" aria-controls="pills-contact" aria-selected="false"> শেয়ার </a>
+                        </li>
+
                       </ul>
                       <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
-                        <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
-                        <div class="tab-pane fade" id="profilephoto" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
-                        <div class="tab-pane fade" id="signature" role="tabpanel" aria-labelledby="pills-contact-tab">...4</div>
-                        <div class="tab-pane fade" id="protikolpo" role="tabpanel" aria-labelledby="pills-contact-tab">...5</div>
-                        <div class="tab-pane fade" id="netification" role="tabpanel" aria-labelledby="pills-contact-tab">...6</div>
+                        <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="topmenu">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="topleftmenu">
+                                            <h5>প্রোফাইল তথ্য <i class="fas fa-user-edit"></i></h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="toprightmenu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href=""> <i class="fas fa-bars"></i> তথ্যাবলী</a></li>
+                                                    <li><a href=""><i class="fas fa-history"></i> কর্ম ইতিহাস</a></li>
+                                                    <li><a href=""><i class="fas fa-home"></i>  হোম </a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-content">
+                                <table class="table table-bordered">
+                                    
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">নাম (বাংলা)	</th>
+                                        <td>মোঃ হাফিজুর রহমান	</td>
+                                        <td>নাম (ইংরেজি)</td>
+                                        <td>Md. Hafijur Rahman</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">পিতার নাম (বাংলা)</th>
+                                        <td></td>
+                                        <td>পিতার নাম (ইংরেজি)</td>
+                                        <td></td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">মাতার নাম (বাংলা)</th>
+                                        <td></td>
+                                        <td>মাতার নাম (ইংরেজি)</td>
+                                        <td></td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">জন্ম তারিখ</th>
+                                        <td>1983-11-10</td>
+                                        <td>পরিচয়পত্র নম্বর</td>
+                                        <td></td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">লিঙ্গ</th>
+                                        <td>পুরুষ</td>
+                                        <td>ধর্ম</td>
+                                        <td>Islam</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">রক্তের গ্রুপ</th>
+                                        <td>O+</td>
+                                        <td>বৈবাহিক অবস্থা</td>
+                                        <td>Married</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">ব্যক্তিগত ই-মেইল</th>
+                                        <td>hafijur.rahman@a2i.gov.bd</td>
+                                        <td>ব্যক্তিগত মোবাইল নম্বরা</td>
+                                        <td>01717508447</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">ববিকল্প মোবাইল নম্বর</th>
+                                        <td></td>
+                                        <td>বলগইন নেম</td>
+                                        <td>200000002939</td>
+                                      </tr>
+
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="topmenu">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="topleftmenu">
+                                            <h5>পাসওয়ার্ড পরিবর্তন</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="toprightmenu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href=""><i class="fas fa-home"></i>  হোম </a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <form>
+                                <div class="form-group row">
+                                  <label for="inputEmail3" class="col-sm-4 col-form-label">বর্তমান পাসওয়ার্ড</label>
+                                  <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="inputEmail3" placeholder="বর্তমান পাসওয়ার্ড">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                  <label for="inputPassword3" class="col-sm-4 col-form-label">নতুন পাসওয়ার্ড</label>
+                                  <div class="col-sm-8">
+                                    <input type="password" class="form-control" id="inputPassword3" placeholder="নতুন পাসওয়ার্ড">
+                                    <p>* পাসওয়ার্ড নূন্যতম ৬ অক্ষরের হতে হবে। অন্তত একটি A-Z অথবা a-z থাকতে হবে।</p>
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputEmail3" class="col-sm-4 col-form-label">পুনরায় নতুন পাসওয়ার্ডটি দিন</label>
+                                    <div class="col-sm-8">
+                                      <input type="password" class="form-control" id="inputEmail3" placeholder="পুনরায় নতুন পাসওয়ার্ডটি দিন">
+                                    </div>
+                                  </div>
+                                <div class="form-group row">
+                                  <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">সংরক্ষণ</button>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="tab-pane fade" id="profilephoto" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="topmenu">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="topleftmenu">
+                                            <h5>প্রোফাইল ছবি পরিবর্তন</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="toprightmenu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href=""><i class="fas fa-home"></i>  হোম </a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="profileimge">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">ছবি  বাছাই করুন </label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="signature" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="topmenu">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="topleftmenu">
+                                            <h5>স্বাক্ষর সেটিংস</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="toprightmenu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href=""><i class="fas fa-home"></i>  হোম </a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="signatureitem">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label  bold" for="inlineCheckbox0">স্বাক্ষর ধরনঃ</label>
+                                  
+                                    <input class="form-check-input" name="rcrd" id="rcrd_id" type="hidden" value="4343">
+                                    <input class="form-check-input" name="nid" id="nid" type="hidden" value="">
+                                    <input class="form-check-input default_sign" name="default_sign" id="electronic" type="radio" value="1" checked="">
+                                    <label class="form-check-label  bold" for="inlineCheckbox1"> ইলেক্ট্রনিক </label>
+                            </div>
+                            <hr>
+                                <form>
+                                    <div class="form-group">
+                                      <label for="exampleFormControlFile1">স্বাক্ষর বাছাই করুন </label>
+                                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                  </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="protikolpo" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="topmenu">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="topleftmenu">
+                                            <h5>সদায়িত্ব হস্তান্তরের তারিখ নির্বাচন করুন</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="toprightmenu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href=""><i class="fas fa-home"></i>  হোম </a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="protikolpoitem">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <p>ছুটির সময়: <input type="text" id="datepicker">হইতে<input type="text" id="datepicker"></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="col-md-12">
+                                            <input type="checkbox" id="protikolpo_show_acting">
+                                            <label for="protikolpo_show_acting" class="form-inline">
+                                                পদবিতে
+                                                <select name="acting_level" class="form-control">
+                                                                                        <option value="ভারপ্রাপ্ত">ভারপ্রাপ্ত</option>
+                                                                                        <option value="চলতি দায়িত্ব">চলতি দায়িত্ব</option>
+                                                                                        <option value="অতিরিক্ত দায়িত্ব">অতিরিক্ত দায়িত্ব</option>
+                                                                                        <option value="রুটিন দায়িত্ব">রুটিন দায়িত্ব</option>
+                                                                                    </select>
+                                                দেখাবে
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="netification" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+                            <div class="topmenu">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="topleftmenu">
+                                            <h5>নোটিফিকেশন</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="toprightmenu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href=""><i class="fas fa-home"></i>  হোম </a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="notificationitem">
+                                <table class="table table-bordered">
+                                    
+                                    <tbody>
+                                        
+                                      <tr>
+                                        <th scope="row">	</th>
+                                        <td>ইমেইল</td>
+                                        <td>এস এম এস</td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">ডাক আপলোড</th>
+                                        <td><div class="bootstrap-switch-container" style=""><span class="bootstrap-switch-handle-on bootstrap-switch-primary">Yes/</span><label class="bootstrap-switch-label">&nbsp;</label><span class="bootstrap-switch-handle-off bootstrap-switch-default">No</span><input type="checkbox" name="email_3" value="1" class="make-switch" data-on-text="Yes" data-off-text="No" id="email-3"></div></td>
+                                        <td></td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">আগত ডাক</th>
+                                        <td><div class="bootstrap-switch-container" style=""><span class="bootstrap-switch-handle-on bootstrap-switch-primary">Yes/</span><label class="bootstrap-switch-label">&nbsp;</label><span class="bootstrap-switch-handle-off bootstrap-switch-default">No</span><input type="checkbox" name="email_3" value="1" class="make-switch" data-on-text="Yes" data-off-text="No" id="email-3"></div></td>
+                                        <td><div class="bootstrap-switch-container" style=""><span class="bootstrap-switch-handle-on bootstrap-switch-primary">Yes/</span><label class="bootstrap-switch-label">&nbsp;</label><span class="bootstrap-switch-handle-off bootstrap-switch-default">No</span><input type="checkbox" name="email_3" value="1" class="make-switch" data-on-text="Yes" data-off-text="No" id="email-3"></div></td>
+                                      </tr>
+
+                                      <tr>
+                                        <th scope="row">আগত নথি</th>
+                                        <td><div class="bootstrap-switch-container" style=""><span class="bootstrap-switch-handle-on bootstrap-switch-primary">Yes/</span><label class="bootstrap-switch-label">&nbsp;</label><span class="bootstrap-switch-handle-off bootstrap-switch-default">No</span><input type="checkbox" name="email_3" value="1" class="make-switch" data-on-text="Yes" data-off-text="No" id="email-3"></div></td>
+                                        <td><div class="bootstrap-switch-container" style=""><span class="bootstrap-switch-handle-on bootstrap-switch-primary">Yes/</span><label class="bootstrap-switch-label">&nbsp;</label><span class="bootstrap-switch-handle-off bootstrap-switch-default">No</span><input type="checkbox" name="email_3" value="1" class="make-switch" data-on-text="Yes" data-off-text="No" id="email-3"></div></td>
+                                      </tr>
+
+                                    </tbody>
+                                  </table>
+                                    <div class="storebutton">
+                                        <button type="submit" class="btn blue btn-settings"><i class="fa fa-check"></i> সংরক্ষণ</button>
+                                    </div>
+                                  <div class="margin-top-20">
+                                    <div class="">   ** <b>কিছু নোটিফিকেশন সেটিং সুপার এডমিন কর্তৃক সংরক্ষিত </b> </div>         </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="shareitem" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="topmenu">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="topleftmenu">
+                                            <h5>ডাক ও নথি শেয়ার</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="toprightmenu">
+                                            <nav>
+                                                <ul>
+                                                    <li><a href=""><i class="fas fa-home"></i>  হোম </a></li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="shareitem">
+                                <form class="form-inline">
+                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">পদবি নির্বাচন</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                      <option selected>-- পদবি নির্বাচন করুন --</option>
+                                      <option value="1">ড. মোঃ আব্দুল মান্নান~প্রকল্প <br>পরিচালক~প্রকল্প পরিচালকের দপ্তর</option>
+                                      <option value="2">(শুন্যপদ)~ইনোভেশন এক্সপার্ট~প্রকল্প পরিচালকের দপ্তর</option>
+                                      <option value="3">ইমরুল হোসাইন~পলিসি এক্সপা  ~প্রকল্প পরিচালকের দপ্তর</option>
+                                    </select>
+                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">অনুমতি</label>
+                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                      <option selected>সকল</option>
+                                      
+                                    </select>
+                                
+                                    <button type="submit" class="btn btn-primary my-1">শেয়ার অনুমতি প্রদান</button>
+                                  </form>
+                            </div>
+                        </div>
                       </div>
                 </div>
 
@@ -121,6 +507,27 @@
         </div>
     </div>
 </div>
+
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="footerleft">
+                    <ul>
+                        <li><a href="#"><img src="images/ban_logo.png" alt="bangladesh"></a></li>
+                        <li><a href="#"><img src="images/a2i-logo.jpg" alt="A2i"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="footerright">
+                    <p>কপিরাইট © ২০২০, এটুআই প্রোগ্রাম</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
